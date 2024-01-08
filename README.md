@@ -9,7 +9,7 @@ Pssst... we don't store these passwords either, so you can rest easy knowing tha
 
 We're all sick of having to think of new passwords, right? So why do we always stress when it comes to picking a new one? 
 
-The aim of this project was to solve a very real problem that people face everyday - password policies kicking in and forcing you to change a password knowing fine well that you've ran out of dog names to use! That's where the motivation behind this project came into force, I was sick of having to remember all of my password combinations and noticed I was re-using the same ones with small changes, over and over.
+The aim of this project was to solve a very real problem that employees face everyday - password policies kicking in and forcing you to change a password knowing fine well that you've ran out of dog names to use! That's where the motivation behind this project came into force, I was sick of having to remember all of my password combinations and noticed I was re-using the same ones with small changes, over and over.
 
 The problem was I didn't have a way of creating passwords other than thinking of random everyday things which probably had no importance to me, causing me to forget them. The solution to this problem was building an application in JavaScript which would randomly generate a password for me, all I would have to do is tell my application how many characters I wanted a password to be, what kind of characters to use and BOOM 🔥 a random password is generated, just like magic! 🧙‍♂️
 
@@ -28,7 +28,7 @@ N/A
 
 Create random, unique and secure passwords with RandoPass Gen - Generate your passwords <a href="https://reececorkhill.github.io/RandoPass-Gen/"> here</a>!
 
-![Screenshot of RandoPass Gen website.](images/RandoPass-Gen.PNG)
+![Screenshot of RandoPass Gen website.](images/RandoPass-Gen.png)
 
 ## Credits
 
