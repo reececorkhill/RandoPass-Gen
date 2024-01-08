@@ -7,10 +7,45 @@ var lowerCasedCharacters = ['a','b','c','d','e','f','g','h','i','j','k','l','m',
 // Array of uppercase characters to be included in password
 var upperCasedCharacters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
+let userPasswordOptions = [];
+let userOptionsSelected = 0;
+let userPasswordLength;
+let mustInclude = [];
+
 // Function to prompt user for password options
 function getPasswordOptions() {
+    while (isNaN(userPasswordLength) || userPasswordLength < 8 || userPasswordLength > 128) {
+        userPasswordLength = prompt("Enter desired password length (between 8 and 128):")
+    };
 
-}
+    while (userOptionsSelected === 0) {
+        alert("Please select at least one of the following:");
+        let chooseSpecialCharacter = confirm("Should your password include Special Characters?");
+            if (chooseSpecialCharacter === true) {
+                userOptionsSelected++
+                userPasswordOptions = userPasswordOptions.concat(specialCharacters);
+                mustInclude.push(specialCharacters[Math.floor(Math.random() * specialCharacters.length)]);
+            };
+        let chooseNumericCharacters = confirm("Should your password include Numeric Characters?");
+            if (chooseNumericCharacters === true) {
+                userOptionsSelected++
+                userPasswordOptions = userPasswordOptions.concat(numericCharacters);
+                mustInclude.push(numericCharacters[Math.floor(Math.random() * numericCharacters.length)]);
+            };
+        let chooseLowerCasedCharacters = confirm("Should your password include Lowercase Characters?");
+            if (chooseLowerCasedCharacters === true) {
+                userOptionsSelected++
+                userPasswordOptions = userPasswordOptions.concat(lowerCasedCharacters);
+                mustInclude.push(lowerCasedCharacters[Math.floor(Math.random() * lowerCasedCharacters.length)]);
+            };
+        let chooseUpperCasedCharacters = confirm("Should your password include Uppercase Characters?");
+            if (chooseUpperCasedCharacters === true) {
+                userOptionsSelected++
+                userPasswordOptions = userPasswordOptions.concat(upperCasedCharacters);
+                mustInclude.push(upperCasedCharacters[Math.floor(Math.random() * upperCasedCharacters.length)]);
+            };
+    };
+};
 
 // Function for getting a random element from an array
 function getRandom(arr) {
