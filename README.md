@@ -17,7 +17,7 @@ N/A
 
 ## Usage
 
-Create random, unique and secure password with RandoPass Gen - Gen your passwords <a href="https://reececorkhill.github.io/RandoPass-Gen/"> here!</a>.
+Create random, unique and secure passwords with RandoPass Gen - Generate your passwords <a href="https://reececorkhill.github.io/RandoPass-Gen/"> here!</a>.
 
 ![Screenshot of finance calculator homepage.](images/RandoPass-Gen.PNG)
 
