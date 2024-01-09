@@ -11,7 +11,7 @@ We're all sick of having to think of new passwords, right? So why do we always s
 
 The aim of this project was to solve a very real problem that employees face everyday - password policies kicking in and forcing you to change a password knowing fine well that you've ran out of dog names to use! That's where the motivation behind this project came into force, I was sick of having to remember all of my password combinations and noticed I was re-using the same ones with small changes, over and over.
 
-The problem was I didn't have a way of creating passwords other than thinking of random everyday things which probably had no importance to me, causing me to forget them. The solution to this problem was building an application in JavaScript which would randomly generate a password for me, all I would have to do is tell my application how many characters I wanted a password to be, what kind of characters to use and BOOM 🔥 a random password is generated, just like magic! 🧙‍♂️
+The problem was I didn't have a way of creating passwords other than thinking of random everyday things which probably had no importance to me, causing me to forget them. The solution to this problem was building an application in JavaScript which would randomly generate a password for me, by implementing functions to store user input and options and calling a function to pick randomly from a variable, all I would have to do is tell my application how many characters I wanted a password to be, what kind of characters to use and BOOM 🔥 a random password is generated, just like magic! 🧙‍♂️
 
 ## Table of Contents
 
