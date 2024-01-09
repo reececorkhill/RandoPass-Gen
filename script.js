@@ -56,14 +56,30 @@ function getRandom() {
     for (i = 0; i < userPasswordLength; i++) {
         generatedPassword += userPasswordOptions [Math.floor(Math.random() * userPasswordOptions.length)]
     };
-    
+
     return generatedPassword;
 };
 
 // Function to generate password with user input
 function generatePassword() {
+    let generatePassWithInput = getRandom();
+    generatePassWithInput = generatePassWithInput.concat(mustInclude.join(""));
+    generatePassWithInput = generatePassWithInput.slice(userOptionsSelected, generatePassWithInput.length).shuffle();
+    return generatePassWithInput;
+};
 
-}
+String.prototype.shuffle = function () {
+    var a = this.split(""),
+        n = a.length;
+  
+    for(var i = n - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = a[i];
+        a[i] = a[j];
+        a[j] = tmp;
+    };
+    return a.join("");
+};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
